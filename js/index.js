@@ -45,7 +45,6 @@ function bouceIn(){
     let docBody = document.querySelector('.home');
     let bounce = TweenLite.to(docBody, 2.5, { ease: Bounce.easeIn, y: 50});
     document.addEventListener('load',bounce);
-    document.addEventListener('load',()=>{docBody.style.position='absolute'; docBody.style.zIndex = '-1';})
 
 }
 
