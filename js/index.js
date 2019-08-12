@@ -1,7 +1,7 @@
 // Your code goes here
 function navOnClick(){
     let adPicture = document.getElementsByClassName('img-fluid rounded');
-    adPicture[0].addEventListener('mouseover', ()=>){
+    adPicture[0].addEventListener('mouseover', ()=>{
         adPicture[0].style.opacity = '.5';
         adPicture[0].style.zIndex = '-1';
     });
@@ -41,6 +41,13 @@ function flexChange(){
     let contentreverse = document.querySelector('.inverse-content');
     contentsec.addEventListener('dblclick',()=>{contentsec.style.flexDirection='row-reverse'; contentreverse.style.flexDirection="row-reverse";})
 }
+function bouceIn(){
+    let docBody = document.querySelector('.home');
+    let bounce = TweenLite.to(docBody, 2.5, { ease: Bounce.easeIn, y: 50});
+    document.addEventListener('load',bounce);
+    document.addEventListener('load',()=>{docBody.style.position='absolute'; docBody.style.zIndex = '-1';})
+
+}
 
 navOnClick();
 btnBckGround();
@@ -50,3 +57,4 @@ navDivBackground();
 copy();
 increaseFontSize();
 flexChange();
+bouceIn();
