@@ -180,6 +180,7 @@ img {
   background: #FFFFFF;
   border-bottom: 2px dashed #C0C0C0;
   position: fixed;
+  z-index: 1;
 }
 .main-navigation .nav-container {
   height: 100%;
@@ -307,6 +308,7 @@ img {
 }
 .home .content-pick {
   padding-top: 30px;
+  margin-bottom: 50px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
